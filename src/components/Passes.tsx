@@ -19,7 +19,7 @@ export function Passes() {
         <SectionHeader
           title={siteConfig.passes.mainTitle}
           subtitle={siteConfig.passes.topLabel}
-          titleClassName="font-pinyon text-5xl md:text-6xl text-[#D4AF37]"
+          titleClassName="font-pinyon text-5xl md:text-6xl text-[#FAF4EA]"
           subtitleClassName="text-[#FAF4EA]/80 tracking-[0.4em] font-sans font-medium text-xs mb-1"
         />
 

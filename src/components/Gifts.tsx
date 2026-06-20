@@ -28,7 +28,7 @@ export function Gifts() {
           <SectionHeader
             title="El Mejor Regalo"
             subtitle="SUGERENCIA"
-            titleClassName="font-pinyon text-5xl md:text-6xl lg:text-7xl text-[#D4AF37]"
+            titleClassName="font-pinyon text-5xl md:text-6xl lg:text-7xl text-[#FAF4EA]"
             subtitleClassName="text-[#FAF4EA]/80 tracking-[0.4em] font-sans font-medium text-xs mb-4"
             className="mb-6"
           />

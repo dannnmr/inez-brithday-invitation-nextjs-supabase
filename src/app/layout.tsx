@@ -42,9 +42,23 @@ export const metadata: Metadata = {
     title: `${siteConfig.client.eventType} de ${siteConfig.client.name} — ¡Estás Invitado!`,
     description: descriptionText,
     siteName: `${siteConfig.client.eventType} - ${siteConfig.client.name}`,
+    images: [
+      {
+        url: "/images/invitation/metadata_logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: `${siteConfig.client.eventType} de ${siteConfig.client.name}`,
+      },
+    ],
     locale: "es_ES",
     type: "website",
-  }
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.client.eventType} de ${siteConfig.client.name} — ¡Estás Invitado!`,
+    description: descriptionText,
+    images: ["/images/invitation/metadata_logo.jpg"],
+  },
 };
 
 export default function RootLayout({

@@ -123,10 +123,10 @@ export function Music() {
             viewport={{ once: true }}
             className="text-center md:text-left mb-2 relative z-10 w-full"
           >
-            <p className="font-sans text-[8px] min-[380px]:text-[9px] md:text-[10px] uppercase tracking-[0.6em] text-[#D4AF37] mb-1 font-bold">
+            <p className="font-sans text-[8px] min-[380px]:text-[9px] md:text-[10px] uppercase tracking-[0.6em] text-[#FAF4EA]/80 mb-1 font-bold">
               Playlist
             </p>
-            <h3 className="font-pinyon text-4xl min-[380px]:text-5xl md:text-6xl text-[#D4AF37] mb-0.5 py-1 leading-normal">
+            <h3 className="font-pinyon text-4xl min-[380px]:text-5xl md:text-6xl text-[#FAF4EA] mb-0.5 py-1 leading-normal">
               Música
             </h3>
             <p className="font-sans text-[8px] min-[380px]:text-[9px] md:text-[10px] text-[#E3D5CA] tracking-[0.15em] font-medium uppercase">

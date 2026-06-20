@@ -169,12 +169,12 @@ export function Gallery() {
           viewport={{ once: true }}
           className="text-center mb-10 w-full flex flex-col items-center"
         >
-          <p className="font-sans text-[10px] md:text-xs uppercase tracking-[0.5em] text-[#D4AF37] mb-2 font-bold">
-            Captura el Momento
-          </p>
-          <h3 className="font-pinyon text-5xl md:text-8xl text-[#D4AF37] leading-none mb-4">
-            Galería Live
-          </h3>
+          <p className="font-sans text-[10px] md:text-xs uppercase tracking-[0.5em] text-[#FAF4EA]/80 mb-2 font-bold">
+              Captura el Momento
+            </p>
+            <h3 className="font-pinyon text-5xl md:text-8xl text-[#FAF4EA] leading-none mb-4">
+              Galería Live
+            </h3>
           <p className="font-sans text-xs md:text-sm text-[#FAF4EA]/80 tracking-[0.15em] font-light max-w-lg mx-auto uppercase px-4">
             Sube tus fotos favoritas de la fiesta. ¡Construyamos el álbum de recuerdos juntos!
           </p>

@@ -16,11 +16,11 @@ export function Hero() {
           alt="Inez Lorine"
           fill
           sizes="100vw"
-          className="object-cover object-center brightness-[0.72] contrast-[1.02]"
+          className="object-cover object-center brightness-[0.95] contrast-[1.02]"
           priority
         />
-        {/* Soft Vignette that fades to solid Guindo at the bottom for smooth page transition */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#380104] via-transparent to-[#380104]/30" />
+        {/* Soft Vignette that fades to solid Guindo at the bottom for smooth page transition, keeping top/center clear */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#380104] via-[#380104]/40 to-transparent" />
       </div>
 
       {/* Elegant Sparkles */}

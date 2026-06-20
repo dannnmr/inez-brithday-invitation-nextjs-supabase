@@ -41,8 +41,8 @@ export function RSVP() {
             subtitle="Confirmación de Asistencia"
             title="RSVP"
             className="mb-2 w-full overflow-visible"
-            titleClassName="text-5xl md:text-7xl leading-normal py-2 mb-1 w-full bg-gradient-to-b from-[#FAF4EA] via-[#FAF4EA] to-[#D4AF37] bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] font-script"
-            subtitleClassName="text-[#D4AF37] font-bold text-[10px] min-[380px]:text-[12px] tracking-[0.5em] mb-2"
+            titleClassName="text-5xl md:text-7xl leading-normal py-2 mb-1 w-full text-[#FAF4EA] drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] font-script"
+            subtitleClassName="text-[#FAF4EA]/80 font-bold text-[10px] min-[380px]:text-[12px] tracking-[0.5em] mb-2"
           />
 
           <div className="text-center mb-6 w-full -mt-2">

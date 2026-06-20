@@ -29,8 +29,8 @@ export function DressCode() {
           <SectionHeader
             title={siteConfig.dressCode.mainTitle}
             subtitle={siteConfig.dressCode.topLabel}
-            titleClassName="font-pinyon text-5xl md:text-6xl text-[#D4AF37]"
-            subtitleClassName="text-[#D4AF37]/80 tracking-[0.5em] font-sans font-bold text-[10px] md:text-xs mb-2"
+            titleClassName="font-pinyon text-5xl md:text-6xl text-[#FAF4EA]"
+            subtitleClassName="text-[#FAF4EA]/80 tracking-[0.5em] font-sans font-bold text-[10px] md:text-xs mb-2"
             className="mb-4"
           />
 

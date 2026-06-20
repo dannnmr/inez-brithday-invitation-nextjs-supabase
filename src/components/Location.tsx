@@ -199,7 +199,7 @@ export function Location() {
               }
               className="mb-4 mt-4 overflow-visible"
               titleClassName="leading-normal py-1 text-[#FAF4EA]"
-              subtitleClassName="text-[#D4AF37] font-bold mb-1"
+              subtitleClassName="text-[#FAF4EA]/80 font-bold mb-1"
             />
 
             <p
