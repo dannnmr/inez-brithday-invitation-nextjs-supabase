@@ -52,7 +52,7 @@ export function Music() {
     <section className="relative pt-4 pb-2 md:pt-6 md:pb-4 px-6 bg-transparent flex flex-col items-center overflow-hidden w-full">
 
       {/* Background Soft Glows */}
-      <div className="absolute top-[20%] right-[-10%] w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-[#C5A059]/5 rounded-full blur-[100px] pointer-events-none z-0"></div>
+      <div className="absolute top-[20%] right-[-10%] w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-[#fbeede]/5 rounded-full blur-[100px] pointer-events-none z-0"></div>
       <div className="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-[#2C4A3E]/3 rounded-full blur-[100px] pointer-events-none z-0"></div>
 
       {/* Safari Leopard decoration */}
@@ -69,16 +69,16 @@ export function Music() {
         <div className="relative w-28 h-28 md:w-32 md:h-32 group flex items-center justify-center shrink-0">
 
           {/* Record player base (white/scrapbook style) */}
-          <div className="absolute inset-[-8px] bg-[#FAF7F2] border-[1.5px] border-[#C5A059]/30 rounded-3xl shadow-sm pointer-events-none rotate-[-2.5deg]">
+          <div className="absolute inset-[-8px] bg-[#FAF7F2] border-[1.5px] border-[#fbeede]/30 rounded-3xl shadow-sm pointer-events-none rotate-[-2.5deg]">
             {/* Corners screws */}
-            <div className="absolute top-2 left-2 w-1 h-1 rounded-full bg-[#C5A059]/40" />
-            <div className="absolute top-2 right-2 w-1 h-1 rounded-full bg-[#C5A059]/40" />
-            <div className="absolute bottom-2 left-2 w-1 h-1 rounded-full bg-[#C5A059]/40" />
-            <div className="absolute bottom-2 right-2 w-1 h-1 rounded-full bg-[#C5A059]/40" />
+            <div className="absolute top-2 left-2 w-1 h-1 rounded-full bg-[#fbeede]/40" />
+            <div className="absolute top-2 right-2 w-1 h-1 rounded-full bg-[#fbeede]/40" />
+            <div className="absolute bottom-2 left-2 w-1 h-1 rounded-full bg-[#fbeede]/40" />
+            <div className="absolute bottom-2 right-2 w-1 h-1 rounded-full bg-[#fbeede]/40" />
           </div>
 
           {/* Tape decor */}
-          <div className="absolute -top-4 -left-2.5 w-9 h-3.5 bg-white/40 backdrop-blur-xs border-x border-dashed border-[#C5A059]/10 rotate-[-15deg] shadow-xs z-20 pointer-events-none" />
+          <div className="absolute -top-4 -left-2.5 w-9 h-3.5 bg-white/40 backdrop-blur-xs border-x border-dashed border-[#fbeede]/10 rotate-[-15deg] shadow-xs z-20 pointer-events-none" />
 
           {/* Vinyl */}
           <motion.div
@@ -91,7 +91,7 @@ export function Music() {
             <div className="absolute inset-0 rounded-full bg-[conic-gradient(from_0deg,transparent_0deg,rgba(255,255,255,0.02)_60deg,transparent_120deg,rgba(255,255,255,0.03)_180deg,transparent_240deg,rgba(255,255,255,0.03)_300deg,transparent_360deg)] pointer-events-none" />
 
             {/* Label Central (Gold) */}
-            <div className="w-8 h-8 rounded-full bg-[#D4AF37] flex flex-col items-center justify-center relative shadow-xs">
+            <div className="w-8 h-8 rounded-full bg-[#fbeede] flex flex-col items-center justify-center relative shadow-xs">
               <div className="w-1.5 h-1.5 rounded-full bg-[#380104] z-10" />
               <span className="absolute text-[3.5px] tracking-[0.25em] text-white font-black font-sans top-1.5 uppercase">PLAYLIST</span>
               <span className="absolute text-[3px] tracking-[0.15em] text-white/80 font-semibold font-sans bottom-1.5 uppercase">SAFARI</span>
@@ -101,14 +101,14 @@ export function Music() {
           {/* Tonearm */}
           <div className="absolute -top-2 right-0 w-8 h-16 origin-top-left transition-transform duration-1000 -rotate-12 group-hover:-rotate-3 pointer-events-none z-20">
             {/* Pivot */}
-            <div className="absolute top-0 left-3 w-4 h-4 rounded-full bg-[#FAF7F2] border border-[#C5A059]/30 shadow-xs flex items-center justify-center">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#C5A059]" />
+            <div className="absolute top-0 left-3 w-4 h-4 rounded-full bg-[#FAF7F2] border border-[#fbeede]/30 shadow-xs flex items-center justify-center">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#fbeede]" />
             </div>
             {/* Metal arm */}
             <div className="w-0.5 h-11 bg-gradient-to-b from-neutral-400 to-neutral-600 rounded-full ml-[17px] mt-2 shadow-xs" />
             {/* Needle */}
             <div className="absolute bottom-2.5 right-[8px] w-1.5 h-2 bg-neutral-900 border border-neutral-800 rounded-sm shadow-xs flex flex-col items-center justify-center">
-              <div className="w-0.5 h-0.5 bg-[#C5A059] rounded-full" />
+              <div className="w-0.5 h-0.5 bg-[#fbeede] rounded-full" />
             </div>
           </div>
         </div>
@@ -145,7 +145,7 @@ export function Music() {
             <form onSubmit={handleSubmit} className="flex flex-col gap-2 w-full relative z-20">
 
               {/* Input pill */}
-              <div className="relative flex items-center w-full p-1 bg-[#2d0102] border border-[#D4AF37]/35 rounded-full shadow-sm focus-within:border-[#D4AF37]">
+              <div className="relative flex items-center w-full p-1 bg-[#2d0102] border border-[#fbeede]/35 rounded-full shadow-sm focus-within:border-[#fbeede]">
 
                 <input
                   id="song"
@@ -162,7 +162,7 @@ export function Music() {
                 <button
                   type="submit"
                   disabled={isSubmitting || isSuccess}
-                  className="flex items-center justify-center shrink-0 w-8 h-8 min-[380px]:w-10 min-[380px]:h-10 md:w-auto md:px-6 bg-[#D4AF37] border border-[#D4AF37] text-[#380104] rounded-full transition-all duration-300 disabled:opacity-50 group cursor-pointer shadow-xs hover:bg-[#D4AF37]/90 font-bold"
+                  className="flex items-center justify-center shrink-0 w-8 h-8 min-[380px]:w-10 min-[380px]:h-10 md:w-auto md:px-6 bg-[#fbeede] border border-[#fbeede] text-[#380104] rounded-full transition-all duration-300 disabled:opacity-50 group cursor-pointer shadow-xs hover:bg-[#fbeede]/90 font-bold"
                 >
                   {isSubmitting ? (
                     <RotateCw className="w-3.5 h-3.5 animate-spin text-[#380104]" />
@@ -182,7 +182,7 @@ export function Music() {
                 {visualizerBars.map((_, i) => (
                   <motion.div
                     key={i}
-                    className="w-[2.5px] h-4 bg-[#C5A059]/20 rounded-full origin-bottom"
+                    className="w-[2.5px] h-4 bg-[#fbeede]/20 rounded-full origin-bottom"
                     style={{ willChange: "transform" }}
                     animate={{
                       scaleY: isSubmitting
@@ -190,7 +190,7 @@ export function Music() {
                         : isSuccess
                           ? [0.375, 0.375, 0.375]
                           : [0.1875, (Math.floor(Math.random() * 11) + 3) / 16, 0.1875],
-                      backgroundColor: isSuccess ? "#22c55e" : "#D4AF37"
+                      backgroundColor: isSuccess ? "#22c55e" : "#fbeede"
                     }}
                     transition={{
                       duration: isSubmitting ? 0.3 : 0.6 + (i % 5) * 0.1,

@@ -21,7 +21,7 @@ export function SectionHeader({
       {subtitle && (
         <p
           className={cn(
-            "font-sans text-[10px] md:text-xs uppercase tracking-[0.5em] text-[#C5A059] mb-2 font-bold",
+            "font-sans text-[10px] md:text-xs uppercase tracking-[0.5em] text-[#fbeede] mb-2 font-bold",
             subtitleClassName
           )}
         >

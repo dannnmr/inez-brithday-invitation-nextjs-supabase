@@ -39,15 +39,15 @@ export function Parents() {
 
         <div className="relative z-10 w-full max-w-4xl mx-auto flex flex-col items-center text-center pt-4">
           <div className="mb-6">
-            <p className="font-sans text-[9px] md:text-[10px] uppercase tracking-[0.6em] text-[#C5A059] font-bold">
+            <p className="font-sans text-[9px] md:text-[10px] uppercase tracking-[0.6em] text-[#fbeede] font-bold">
               {siteConfig.parents.topLabel}
             </p>
-            <div className="w-12 h-[1.5px] bg-[#C5A059] mx-auto mt-2.5" />
+            <div className="w-12 h-[1.5px] bg-[#fbeede] mx-auto mt-2.5" />
           </div>
 
           {/* Glassmorphism Card */}
           <div
-            className="w-full max-w-2xl p-6 md:p-10 rounded-3xl relative overflow-hidden border border-[#C5A059]/35"
+            className="w-full max-w-2xl p-6 md:p-10 rounded-3xl relative overflow-hidden border border-[#fbeede]/35"
             style={{
               background: "linear-gradient(135deg, rgba(35, 23, 16, 0.82) 0%, rgba(20, 13, 9, 0.88) 100%)",
               backdropFilter: "blur(18px)",
@@ -57,22 +57,22 @@ export function Parents() {
           >
 
             {/* Elegant Golden Accent Line */}
-            <div className="absolute top-0 left-0 right-0 h-[2.5px] bg-linear-to-r from-transparent via-[#C5A059] to-transparent z-10" />
+            <div className="absolute top-0 left-0 right-0 h-[2.5px] bg-linear-to-r from-transparent via-[#fbeede] to-transparent z-10" />
 
             {/* Parents Section */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-1 md:gap-6 mb-4 md:mb-5 relative z-10">
               <div className="text-center group cursor-default">
-                <h2 className="font-pinyon text-3xl md:text-5xl text-[#FAF4EA] tracking-wide transition-all duration-300 group-hover:text-[#C5A059]">
+                <h2 className="font-pinyon text-3xl md:text-5xl text-[#FAF4EA] tracking-wide transition-all duration-300 group-hover:text-[#fbeede]">
                   {siteConfig.parents.fatherName}
                 </h2>
               </div>
 
               <div className="flex items-center justify-center py-1 md:py-0">
-                <span className="font-pinyon text-3xl md:text-4xl text-[#C5A059] font-light">&amp;</span>
+                <span className="font-pinyon text-3xl md:text-4xl text-[#fbeede] font-light">&amp;</span>
               </div>
 
               <div className="text-center group cursor-default">
-                <h2 className="font-pinyon text-3xl md:text-5xl text-[#FAF4EA] tracking-wide transition-all duration-300 group-hover:text-[#C5A059]">
+                <h2 className="font-pinyon text-3xl md:text-5xl text-[#FAF4EA] tracking-wide transition-all duration-300 group-hover:text-[#fbeede]">
                   {siteConfig.parents.motherName}
                 </h2>
               </div>
@@ -81,9 +81,9 @@ export function Parents() {
             {/* Godparents Section */}
             {siteConfig.parents.godparents && (
               <>
-                <div className="w-full h-px bg-[#C5A059]/20 my-4 md:my-5" />
+                <div className="w-full h-px bg-[#fbeede]/20 my-4 md:my-5" />
                 <div className="text-center group cursor-default mb-4 md:mb-5 relative z-10">
-                  <p className="font-sans text-[8px] md:text-[9px] tracking-[0.4em] text-[#C5A059] uppercase mb-2 font-bold">
+                  <p className="font-sans text-[8px] md:text-[9px] tracking-[0.4em] text-[#fbeede] uppercase mb-2 font-bold">
                     Y mis padrinos
                   </p>
                   {Array.isArray(siteConfig.parents.godparents) ? (
@@ -91,10 +91,10 @@ export function Parents() {
                       {siteConfig.parents.godparents.map((godparent, index) => (
                         <React.Fragment key={index}>
                           {index > 0 && (
-                            <span className="text-[#C5A059]/55 text-[10px] md:text-[12px] my-1 md:my-0 select-none">✦</span>
+                            <span className="text-[#fbeede]/55 text-[10px] md:text-[12px] my-1 md:my-0 select-none">✦</span>
                           )}
                           <div className="text-center px-0.2">
-                            <h3 className="font-pinyon text-2xl md:text-3xl text-[#FAF4EA] transition-all duration-300 group-hover:text-[#C5A059] leading-relaxed">
+                            <h3 className="font-pinyon text-2xl md:text-3xl text-[#FAF4EA] transition-all duration-300 group-hover:text-[#fbeede] leading-relaxed">
                               {godparent}
                             </h3>
                           </div>
@@ -102,7 +102,7 @@ export function Parents() {
                       ))}
                     </div>
                   ) : (
-                    <h3 className="font-pinyon text-2xl md:text-4xl text-[#FAF4EA] transition-all duration-300 group-hover:text-[#C5A059]">
+                    <h3 className="font-pinyon text-2xl md:text-4xl text-[#FAF4EA] transition-all duration-300 group-hover:text-[#fbeede]">
                       {siteConfig.parents.godparents}
                     </h3>
                   )}
@@ -110,7 +110,7 @@ export function Parents() {
               </>
             )}
 
-            <div className="w-full h-px bg-[#C5A059]/20 my-4 md:my-5" />
+            <div className="w-full h-px bg-[#fbeede]/20 my-4 md:my-5" />
 
             {/* Invitation Text */}
             <div className="relative z-10 px-4">

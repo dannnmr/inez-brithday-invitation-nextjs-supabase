@@ -16,57 +16,65 @@ export function Hero() {
           alt="Inez Lorine"
           fill
           sizes="100vw"
-          className="object-cover object-center brightness-[0.95] contrast-[1.02]"
+          className="object-cover object-center brightness-[0.98] contrast-[1.02]"
           priority
         />
         {/* Soft Vignette that fades to solid Guindo at the bottom for smooth page transition, keeping top/center clear */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#380104] via-[#380104]/40 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-[70%] bg-gradient-to-t from-[#380104] via-[#380104]/30 via-35% to-transparent" />
       </div>
 
-      {/* Elegant Sparkles */}
+      {/* Elegant Hanging Pearls across the entire top edge */}
+      <div className="absolute top-0 left-0 right-0 w-full h-26 min-[380px]:h-36 md:h-52 lg:h-60 z-10 pointer-events-none opacity-45">
+        <Image
+          src="/images/decorativas_v2/perlas_colgando.png"
+          alt="Perlas Colgando"
+          fill
+          sizes="100vw"
+          className="object-cover object-top"
+          priority
+        />
+      </div>
+
+
+      {/* Ambient Sparkles */}
       <SparkleField mobileCount={12} desktopCount={28} />
 
-      {/* Main Content Container */}
-      <div className="relative z-10 w-full max-w-3xl flex flex-col items-center justify-center text-center px-4">
-        
-        {/* Event Badge / Subtitle */}
-        <motion.div
-          initial={{ opacity: 0, y: -15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mb-4 inline-block bg-[#380104]/60 backdrop-blur-md border border-[#FAF4EA]/25 px-6 py-2 rounded-full shadow-[0_4px_25px_rgba(0,0,0,0.4)]"
-        >
-          <span className="relative text-[#FAF4EA] tracking-[0.4em] font-sans font-bold text-[10px] md:text-xs uppercase">
-            {siteConfig.client.eventType}
-          </span>
-        </motion.div>
+      {/* Happy Birthday Title (Absolute Positioned at the top to align with hanging pearls) */}
+      <motion.h2
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="absolute top-16 md:top-18 left-0 right-0 z-20 font-serif text-4xl min-[380px]:text-5xl md:text-5xl lg:text-6xl text-[#FAF4EA] tracking-[0.2em] uppercase leading-none drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)] font-light text-center px-6"
+      >
+        Happy Birthday
+      </motion.h2>
 
-        {/* Happy Birthday Title (Elegant Serif in Crema) */}
-        <motion.h2
+      {/* Main Content Container */}
+      <div className="relative z-10 w-full max-w-3xl flex flex-col items-center justify-center text-center px-3">
+        
+        {/* Cumpleañera Name (Elegant Graphic Image - Enlarged and Adjusted) */}
+        <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-          className="font-serif text-3xl min-[380px]:text-4xl md:text-6xl lg:text-7xl text-[#FAF4EA] tracking-[0.2em] uppercase leading-none mb-1 drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)] font-light"
+          transition={{ delay: 0.3, duration: 0.8 }}
+          className="relative w-full max-w-[320px] min-[380px]:max-w-[400px] md:max-w-[540px] lg:max-w-[620px] aspect-square mx-auto mt-[40px] mb-[-35px] md:mt-[60px] md:mb-[-70px] filter drop-shadow-[0_4px_15px_rgba(0,0,0,0.85)] z-10"
         >
-          Happy Birthday
-        </motion.h2>
-
-        {/* Cumpleañera Name (Elegant Curved Script in Crema) */}
-        <motion.h1
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-          className="font-script text-7xl min-[380px]:text-8xl md:text-9xl lg:text-[10rem] text-[#FAF4EA] leading-normal py-4 drop-shadow-[0_4px_20px_rgba(0,0,0,0.95)] font-normal tracking-wide"
-        >
-          {siteConfig.client.name}
-        </motion.h1>
+          <Image
+            src="/images/decorativas_v2/Inez_Lorine_texto.png"
+            alt="Inez Lorine"
+            fill
+            sizes="(max-width: 768px) 400px, 580px"
+            className="object-contain"
+            priority
+          />
+        </motion.div>
 
         {/* Welcome Phrase (inside glass card, text color in crema) */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8, duration: 0.8 }}
-          className="liquid-glass-card w-full max-w-[90%] md:max-w-md px-6 py-4.5 flex flex-col items-center justify-center shadow-2xl relative overflow-hidden mt-2 bg-[#380104]/50 backdrop-blur-md border border-[#FAF4EA]/15"
+          transition={{ delay: 0.6, duration: 0.8 }}
+          className="liquid-glass-card w-full max-w-[90%] md:max-w-md px-4 py-3.5 flex flex-col items-center justify-center shadow-2xl relative overflow-hidden mt-2 bg-[#380104]/50 backdrop-blur-md border border-[#FAF4EA]/15"
         >
           <div className="absolute top-0 left-0 right-0 h-[38%] rounded-t-[20px] rounded-b-[10px] bg-gradient-to-b from-[rgba(255,255,255,0.08)] to-transparent pointer-events-none z-10" />
           <p className="relative font-sans text-xs md:text-sm font-light italic text-center leading-relaxed text-[#FAF4EA] tracking-wide z-20">

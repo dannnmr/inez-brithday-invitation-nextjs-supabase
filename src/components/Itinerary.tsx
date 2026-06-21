@@ -42,13 +42,13 @@ export function Itinerary() {
             title={siteConfig.itinerary.mainTitle}
             subtitle={siteConfig.itinerary.topLabel}
             titleClassName="lg:text-[6rem] text-[#2C4A3E]"
-            subtitleClassName="text-[#C5A059]"
+            subtitleClassName="text-[#fbeede]"
           />
         </AnimatedSection>
 
         <div className="w-full relative mt-6">
           {/* Subtle Golden Timeline Central Line */}
-          <div className="absolute top-0 bottom-0 left-[24px] md:left-1/2 w-px bg-linear-to-b from-transparent via-[#C5A059]/40 to-transparent"></div>
+          <div className="absolute top-0 bottom-0 left-[24px] md:left-1/2 w-px bg-linear-to-b from-transparent via-[#fbeede]/40 to-transparent"></div>
 
           <div className="flex flex-col gap-6 md:gap-8 w-full max-w-3xl mx-auto">
             {siteConfig.itinerary.schedule.map((item, index) => {
@@ -64,7 +64,7 @@ export function Itinerary() {
                     }`}
                 >
                   {/* Timeline Gold Dot */}
-                  <div className="absolute left-[24px] md:left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-linear-to-br from-[#E6D5B8] to-[#C5A059] z-10 shadow-[0_0_8px_rgba(197,160,89,0.5)] border border-[#C5A059]/30"></div>
+                  <div className="absolute left-[24px] md:left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-linear-to-br from-[#E6D5B8] to-[#fbeede] z-10 shadow-[0_0_8px_rgba(197,160,89,0.5)] border border-[#fbeede]/30"></div>
 
                   {/* Empty Spacer for desktop grid */}
                   <div className="hidden md:block w-1/2"></div>
@@ -95,7 +95,7 @@ export function Itinerary() {
                         </span>
 
                         {/* Desktop Line Divider */}
-                        <div className="hidden md:block w-4 h-px bg-linear-to-r from-transparent via-[#C5A059]/40 to-transparent shrink-0"></div>
+                        <div className="hidden md:block w-4 h-px bg-linear-to-r from-transparent via-[#fbeede]/40 to-transparent shrink-0"></div>
 
                         {/* Mobile Line Divider */}
                         <div className="md:hidden flex-1 border-b border-dotted border-[#231710]/30 mx-1 min-[380px]:mx-3 relative top-[-4px] min-[380px]:top-[-6px] min-w-[3px]"></div>

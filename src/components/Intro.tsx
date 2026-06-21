@@ -79,7 +79,7 @@ export function Intro() {
       const angle = (i * 360) / 32 + (Math.random() * 15 - 7.5);
       const distance = 100 + Math.random() * 150;
       const size = 5 + Math.random() * 7;
-      const colors = ["#C5A059", "#ffffff", "#2C4A3E", "#8E9F93", "#E3D5CA"]; // Gold, White, Jungle Green, Sage, Sand/Beige
+      const colors = ["#fbeede", "#ffffff", "#2C4A3E", "#8E9F93", "#E3D5CA"]; // Gold, White, Jungle Green, Sage, Sand/Beige
       const color = colors[Math.floor(Math.random() * colors.length)];
       const rad = (angle * Math.PI) / 180;
       return {
@@ -241,7 +241,7 @@ export function Intro() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={toggleAudio}
-          className="fixed bottom-6 right-6 z-99 w-12 h-12 bg-[#FAF7F2]/80 backdrop-blur-md border border-[#C5A059]/30 rounded-full flex items-center justify-center shadow-[0_8px_25px_rgba(44,74,62,0.15)] text-[#2C4A3E] transition-all hover:bg-white hover:scale-105"
+          className="fixed bottom-6 right-6 z-99 w-12 h-12 bg-[#FAF7F2]/80 backdrop-blur-md border border-[#fbeede]/30 rounded-full flex items-center justify-center shadow-[0_8px_25px_rgba(44,74,62,0.15)] text-[#2C4A3E] transition-all hover:bg-white hover:scale-105"
           aria-label={isPlaying ? "Pausar música" : "Reproducir música"}
         >
           {isPlaying ? <Volume2 size={24} strokeWidth={1.5} /> : <VolumeX size={24} strokeWidth={1.5} />}

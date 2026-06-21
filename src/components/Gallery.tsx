@@ -158,7 +158,7 @@ export function Gallery() {
       />
 
       {/* Subtle Background Glows */}
-      <div className="absolute top-[-10%] right-[-10%] w-[400px] h-[400px] bg-[#D4AF37]/5 rounded-full blur-[100px] pointer-events-none z-0"></div>
+      <div className="absolute top-[-10%] right-[-10%] w-[400px] h-[400px] bg-[#fbeede]/5 rounded-full blur-[100px] pointer-events-none z-0"></div>
       <div className="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] bg-transparent rounded-full blur-[100px] pointer-events-none z-0"></div>
 
       <div className="max-w-6xl w-full relative z-10 flex flex-col items-center">
@@ -183,20 +183,20 @@ export function Gallery() {
           <div
             {...getRootProps()}
             className={`mt-8 max-w-md w-full mx-auto p-8 border-2 border-dashed rounded-[2.5rem] cursor-pointer transition-all duration-300 ${isDragActive
-              ? "border-[#D4AF37] bg-[#D4AF37]/10 shadow-sm"
-              : "border-[#D4AF37]/35 bg-white/5 backdrop-blur-md hover:bg-white/10 hover:border-[#D4AF37]/50 shadow-xs"
+              ? "border-[#fbeede] bg-[#fbeede]/10 shadow-sm"
+              : "border-[#fbeede]/35 bg-white/5 backdrop-blur-md hover:bg-white/10 hover:border-[#fbeede]/50 shadow-xs"
               } ${isUploading ? "opacity-50 cursor-not-allowed" : ""}`}
           >
             <input {...getInputProps()} />
             <div className="flex flex-col items-center gap-4">
               {isUploading ? (
                 <>
-                  <RotateCw className="w-10 h-10 text-[#D4AF37] animate-spin" />
-                  <p className="font-sans text-[#D4AF37] font-bold tracking-wide text-sm">Subiendo foto...</p>
+                  <RotateCw className="w-10 h-10 text-[#fbeede] animate-spin" />
+                  <p className="font-sans text-[#fbeede] font-bold tracking-wide text-sm">Subiendo foto...</p>
                 </>
               ) : (
                 <>
-                  <UploadCloud className="w-10 h-10 text-[#D4AF37] drop-shadow-xs" />
+                  <UploadCloud className="w-10 h-10 text-[#fbeede] drop-shadow-xs" />
                   <div>
                     <p className="font-sans text-[#FAF4EA] font-extrabold text-base mb-1">Toca aquí o arrastra una foto</p>
                     <p className="font-sans text-[9px] md:text-[10px] text-[#FAF4EA]/60 uppercase tracking-widest">JPG, PNG, WEBP (Max 5MB)</p>
@@ -223,7 +223,7 @@ export function Gallery() {
         {/* STACKED CARD SWIPER */}
         <div className="w-full relative z-10 flex flex-col items-center">
           {isLoading ? (
-            <div className="w-full py-20 flex justify-center text-[#D4AF37]">
+            <div className="w-full py-20 flex justify-center text-[#fbeede]">
               <RotateCw className="w-10 h-10 animate-spin mx-auto block" />
             </div>
           ) : photos.length === 0 ? (
@@ -239,7 +239,7 @@ export function Gallery() {
               <p className="text-[#FAF4EA]/60 font-sans text-[10px] md:text-xs tracking-widest uppercase mb-4 font-medium">¡Has visto todas las fotos!</p>
               <button
                 onClick={() => setCurrentIndex(0)}
-                className="px-5 py-2.5 bg-[#D4AF37] text-[#380104] rounded-full font-sans uppercase text-[9px] md:text-[10px] tracking-widest hover:bg-[#D4AF37]/90 transition-all flex items-center justify-center gap-2 mx-auto hover:scale-105 shadow-xs cursor-pointer"
+                className="px-5 py-2.5 bg-[#fbeede] text-[#380104] rounded-full font-sans uppercase text-[9px] md:text-[10px] tracking-widest hover:bg-[#fbeede]/90 transition-all flex items-center justify-center gap-2 mx-auto hover:scale-105 shadow-xs cursor-pointer"
               >
                 <RotateCw className="w-3 h-3 md:w-4 md:h-4" /> Volver a ver galería
               </button>
@@ -326,7 +326,7 @@ export function Gallery() {
                         <div className="mt-3.5 flex justify-between items-center px-1">
 
                           {/* Heart Icon (Gold) */}
-                          <Heart className={`w-5 h-5 md:w-6 md:h-6 text-[#D4AF37] transition-colors ${isTop ? 'fill-[#D4AF37]/20' : 'fill-transparent'}`} />
+                          <Heart className={`w-5 h-5 md:w-6 md:h-6 text-[#fbeede] transition-colors ${isTop ? 'fill-[#fbeede]/20' : 'fill-transparent'}`} />
 
                           <span className="font-sans text-[8px] md:text-[9px] text-neutral-500 tracking-[0.12em] font-black uppercase pointer-events-none text-center flex-1 px-1">
                             {isTop ? 'Toca para ampliar' : ''}
@@ -363,10 +363,10 @@ export function Gallery() {
                     }
                   }}
                   disabled={currentIndex === 0}
-                  className={`w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#FAF7F2] shadow-xs flex items-center justify-center transition-all border border-[#D4AF37]/20 ${
+                  className={`w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#FAF7F2] shadow-xs flex items-center justify-center transition-all border border-[#fbeede]/20 ${
                     currentIndex === 0
                       ? 'opacity-40 cursor-not-allowed text-neutral-400'
-                      : 'text-[#D4AF37] hover:bg-white/10 hover:scale-110 active:scale-95 cursor-pointer'
+                      : 'text-[#fbeede] hover:bg-white/10 hover:scale-110 active:scale-95 cursor-pointer'
                   }`}
                   aria-label="Foto anterior"
                 >
@@ -385,7 +385,7 @@ export function Gallery() {
                       setCurrentIndex(prev => prev + 1);
                     }
                   }}
-                  className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#FAF7F2] shadow-xs flex items-center justify-center text-[#D4AF37] hover:bg-white/10 hover:scale-110 active:scale-95 transition-all border border-[#D4AF37]/30 cursor-pointer"
+                  className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#FAF7F2] shadow-xs flex items-center justify-center text-[#fbeede] hover:bg-white/10 hover:scale-110 active:scale-95 transition-all border border-[#fbeede]/30 cursor-pointer"
                   aria-label="Siguiente foto"
                 >
                   <ChevronRight className="w-6 h-6" />
@@ -409,7 +409,7 @@ export function Gallery() {
             <motion.button
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="absolute top-6 right-6 text-[#FAF4EA] hover:text-[#D4AF37] transition-colors bg-white/10 shadow-md p-4 rounded-full border border-[#D4AF37]/20 z-50 hover:scale-110 cursor-pointer"
+              className="absolute top-6 right-6 text-[#FAF4EA] hover:text-[#fbeede] transition-colors bg-white/10 shadow-md p-4 rounded-full border border-[#fbeede]/20 z-50 hover:scale-110 cursor-pointer"
               onClick={() => setSelectedImage(null)}
             >
               <X className="w-6 h-6" />
@@ -425,7 +425,7 @@ export function Gallery() {
               <img
                 src={selectedImage}
                 alt="Fullscreen view"
-                className="max-w-full max-h-[90vh] object-contain shadow-md bg-white p-2 border border-[#D4AF37]/20 pointer-events-auto cursor-default"
+                className="max-w-full max-h-[90vh] object-contain shadow-md bg-white p-2 border border-[#fbeede]/20 pointer-events-auto cursor-default"
                 onClick={(e) => e.stopPropagation()}
               />
             </motion.div>

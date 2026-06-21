@@ -130,30 +130,30 @@
 //           </AnimatedSection>
 
 //           {/* Formulario en tarjeta de notas */}
-//           <AnimatedSection once className="w-full lg:w-1/2 card-glass p-6 md:p-8 rounded-3xl border border-[#C5A059]/40 relative">
+//           <AnimatedSection once className="w-full lg:w-1/2 card-glass p-6 md:p-8 rounded-3xl border border-[#fbeede]/40 relative">
 //             <form onSubmit={handleSubmit} className="flex flex-col gap-5">
 //               <div className="relative">
-//                 <label htmlFor="autor" className="block text-[9px] uppercase tracking-widest text-[#C5A059] font-bold mb-1">Nombre</label>
+//                 <label htmlFor="autor" className="block text-[9px] uppercase tracking-widest text-[#fbeede] font-bold mb-1">Nombre</label>
 //                 <input
 //                   id="autor"
 //                   type="text"
 //                   value={name}
 //                   onChange={(e) => setName(e.target.value)}
 //                   placeholder="Tu Nombre..."
-//                   className="w-full bg-transparent border-b border-[#C5A059]/20 pb-1.5 focus:outline-none focus:border-[#C5A059] font-sans text-sm text-[#FAF4EA] placeholder-[#FAF4EA]/30 tracking-widest"
+//                   className="w-full bg-transparent border-b border-[#fbeede]/20 pb-1.5 focus:outline-none focus:border-[#fbeede] font-sans text-sm text-[#FAF4EA] placeholder-[#FAF4EA]/30 tracking-widest"
 //                   required
 //                   disabled={isSubmitting}
 //                 />
 //               </div>
 //               <div className="relative">
-//                 <label htmlFor="mensaje" className="block text-[9px] uppercase tracking-widest text-[#C5A059] font-bold mb-1">Mensaje</label>
+//                 <label htmlFor="mensaje" className="block text-[9px] uppercase tracking-widest text-[#fbeede] font-bold mb-1">Mensaje</label>
 //                 <textarea
 //                   id="mensaje"
 //                   value={message}
 //                   onChange={(e) => setMessage(e.target.value)}
 //                   placeholder={`Felicidades ${siteConfig.client.name}...`}
 //                   rows={3}
-//                   className="w-full bg-transparent border-b border-[#C5A059]/20 pb-1.5 focus:outline-none focus:border-[#C5A059] font-script text-3xl text-white placeholder-[#FAF4EA]/30 resize-none leading-relaxed"
+//                   className="w-full bg-transparent border-b border-[#fbeede]/20 pb-1.5 focus:outline-none focus:border-[#fbeede] font-script text-3xl text-white placeholder-[#FAF4EA]/30 resize-none leading-relaxed"
 //                   required
 //                   disabled={isSubmitting}
 //                 />
@@ -175,7 +175,7 @@
 //         <div className="w-full overflow-hidden relative">
 //           {isLoading ? (
 //             <div className="py-12 flex justify-center">
-//               <RotateCw className="w-8 h-8 animate-spin text-[#C5A059]" />
+//               <RotateCw className="w-8 h-8 animate-spin text-[#fbeede]" />
 //             </div>
 //           ) : wishes.length === 0 ? (
 //             <div className="py-12 text-center text-[#8B7355] font-sans tracking-widest uppercase text-xs">
@@ -195,7 +195,7 @@
 //                     className="shrink-0 w-[80vw] sm:w-[280px] snap-center bg-white p-6 shadow-md rounded-xl flex flex-col relative border border-neutral-100"
 //                     style={{ rotate: `${idx % 2 === 0 ? -1.5 : 1.5}deg` }}
 //                   >
-//                     <Quote className="w-5 h-5 text-[#C5A059]/20 absolute top-4 left-4" />
+//                     <Quote className="w-5 h-5 text-[#fbeede]/20 absolute top-4 left-4" />
 //                     <p className="font-script text-2xl leading-relaxed text-[#2E1E15] mb-5 mt-4 w-full overflow-hidden text-ellipsis">
 //                       "{wish.mensaje}"
 //                     </p>
@@ -203,7 +203,7 @@
 //                       <span className="font-sans text-[8px] font-black uppercase tracking-widest text-[#8B7355] truncate max-w-[85%]">
 //                         {wish.autor}
 //                       </span>
-//                       <Heart className="w-3.5 h-3.5 fill-[#C5A059]/40 text-[#C5A059]/40 shrink-0" />
+//                       <Heart className="w-3.5 h-3.5 fill-[#fbeede]/40 text-[#fbeede]/40 shrink-0" />
 //                     </div>
 //                   </motion.div>
 //                 ))}

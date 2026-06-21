@@ -12,7 +12,18 @@ export function Gifts() {
     <section className="relative py-12 md:py-16 px-6 bg-transparent flex flex-col items-center overflow-hidden w-full">
 
       {/* Ambient Halo */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-[#D4AF37]/5 rounded-full blur-[100px] pointer-events-none z-0" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-[#fbeede]/5 rounded-full blur-[100px] pointer-events-none z-0" />
+
+      {/* Decorative Fountain in the background */}
+      <div className="absolute bottom-[-5%] right-[-5%] w-40 h-[240px] md:w-60 md:h-[360px] z-0 pointer-events-none opacity-20">
+        <Image
+          src="/images/decorativas_v2/fuente.png"
+          alt="Fuente de Agua"
+          fill
+          sizes="(max-width: 768px) 160px, 240px"
+          className="object-contain object-right-bottom"
+        />
+      </div>
 
       {/* Floating Jungle Ornaments */}
       <FloatingDecoration
@@ -36,7 +47,7 @@ export function Gifts() {
           {/* Centered Lluvia de Sobres Card */}
           <div className="flex flex-col items-center justify-center text-center card-glass p-8 md:p-12 rounded-3xl shadow-xl relative overflow-hidden w-full max-w-xl mx-auto">
             {/* Elegant Gold Top Border */}
-            <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
+            <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#fbeede] to-transparent" />
 
             {/* Floating Envelope Icon */}
             <motion.div

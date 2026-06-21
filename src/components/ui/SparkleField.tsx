@@ -29,7 +29,7 @@ export function SparkleField({ mobileCount = 8, desktopCount = 24 }: SparkleFiel
         id: i,
         top: `${Math.random() * 100}%`,
         left: `${Math.random() * 100}%`,
-        color: i % 3 === 0 ? "#C5A059" : "rgba(255, 255, 255, 0.8)",
+        color: i % 3 === 0 ? "#fbeede" : "rgba(255, 255, 255, 0.8)",
         size: Math.random() * 3 + 2,
         duration: `${(Math.random() * 3 + 4).toFixed(2)}s`,
         delay: `${(Math.random() * 8).toFixed(2)}s`,
@@ -48,13 +48,17 @@ export function SparkleField({ mobileCount = 8, desktopCount = 24 }: SparkleFiel
           style={{
             top: s.top,
             left: s.left,
-            width: `${s.size * 5}px`,
-            height: `${s.size * 5}px`,
+            width: `${s.size * 4.5}px`,
+            height: `${s.size * 4.5}px`,
             color: s.color,
             animationDuration: s.duration,
             animationDelay: s.delay,
           }}
-        />
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full drop-shadow-[0_0_3px_currentColor]">
+            <path d="M12 2Q12 12 22 12Q12 12 12 22Q12 12 2 12Q12 12 12 2" />
+          </svg>
+        </div>
       ))}
     </div>
   );

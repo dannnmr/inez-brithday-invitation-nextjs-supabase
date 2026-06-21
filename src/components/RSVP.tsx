@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
+import Image from "next/image";
 import { siteConfig } from "../config/invitation";
 import { SectionHeader } from "./ui/SectionHeader";
 import { AnimatedSection } from "./ui/AnimatedSection";
@@ -15,6 +16,26 @@ export function RSVP() {
 
   return (
     <section className="relative py-8 px-6 bg-transparent flex flex-col items-center overflow-hidden w-full">
+
+      {/* Decorative Pearl Strings on the sides */}
+      <div className="absolute left-[3%] top-[15%] w-24 h-[145px] md:w-36 md:h-[220px] z-0 pointer-events-none opacity-20">
+        <Image
+          src="/images/decorativas_v2/perlas.png"
+          alt="Perlas"
+          fill
+          sizes="(max-width: 768px) 96px, 144px"
+          className="object-contain object-left"
+        />
+      </div>
+      <div className="absolute right-[3%] bottom-[15%] w-24 h-[145px] md:w-36 md:h-[220px] z-0 pointer-events-none opacity-20 scale-x-[-1]">
+        <Image
+          src="/images/decorativas_v2/perlas.png"
+          alt="Perlas"
+          fill
+          sizes="(max-width: 768px) 96px, 144px"
+          className="object-contain object-left"
+        />
+      </div>
 
       {/* Decorative Jungle Leaves */}
       <FloatingDecoration
@@ -35,7 +56,7 @@ export function RSVP() {
         {/* card-glass container */}
         <div className="card-glass p-6 md:p-10 rounded-3xl relative overflow-hidden text-center flex flex-col items-center">
           {/* Elegant Gold Top Border */}
-          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
+          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#fbeede] to-transparent" />
 
           <SectionHeader
             subtitle="Confirmación de Asistencia"
@@ -46,7 +67,7 @@ export function RSVP() {
           />
 
           <div className="text-center mb-6 w-full -mt-2">
-            <p className="font-sans text-[10px] md:text-xs text-[#FAF4EA]/85 tracking-widest font-light max-w-sm mx-auto uppercase leading-relaxed px-4">
+            <p className="font-sans text-[10px] md:text-xs text-[#FAF4EA]/85 tracking-widest font-light max-w-sm mx-auto uppercase leading-relaxed px-2">
               Por favor, confírmanos tu presencia en este día tan especial pulsando el botón a continuación.
             </p>
           </div>
@@ -58,14 +79,14 @@ export function RSVP() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="w-full flex items-center justify-center gap-3 px-6 py-4.5 bg-[#FAF4EA] hover:bg-[#FAF4EA]/90 text-[#380104] border border-white/5 rounded-full font-sans tracking-[0.25em] uppercase text-[10px] md:text-xs font-black transition-all duration-300 shadow-[0_8px_25px_rgba(212,175,55,0.15)] cursor-pointer"
+            className="w-full flex items-center justify-center gap-3 px-6 py-4.5 bg-[#FAF4EA] hover:bg-[#FAF4EA]/90 text-[#380104] border border-white/5 rounded-full font-sans tracking-[0.25em] uppercase text-[10px] md:text-xs font-black transition-all duration-300 shadow-[0_8px_25px_rgba(251, 238, 222,0.15)] cursor-pointer"
           >
             <MessageCircle className="w-4 h-4 text-[#380104] shrink-0" fill="currentColor" strokeWidth={1} />
             <span>Confirmar Asistencia</span>
           </motion.a>
 
           {/* Help note */}
-          <p className="font-sans text-[8px] tracking-widest text-[#D4AF37] uppercase font-bold mt-4">
+          <p className="font-sans text-[8px] tracking-widest text-[#fbeede] uppercase font-bold mt-4">
             Envía un mensaje directo a WhatsApp
           </p>
 

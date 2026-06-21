@@ -98,9 +98,9 @@ export const siteConfig: SiteConfig = {
   },
   theme: {
     colors: {
-      primary: "#D4AF37",
+      primary: "#fbeede",
       secondary: "#FAF4EA",
-      accent: "#D4AF37",
+      accent: "#fbeede",
       background: "#380104",
       foreground: "#FAF4EA",
       card: "rgba(56, 1, 4, 0.93)",
