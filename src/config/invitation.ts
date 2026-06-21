@@ -3,7 +3,7 @@ import { SiteConfig } from "@/types/invitation";
 export const siteConfig: SiteConfig = {
   client: {
     name: "Inez Lorine",
-    eventType: "Mis 60 Años",
+    eventType: "¡Una Noche Inolvidable!",
     finalPhrase: "Hay momentos que se vuelven inolvidables cuando los compartimos con las personas que queremos. Te invito a acompañarme a celebrar mi cumpleaños y ser parte de un día lleno de alegría y gratitud.",
   },
   parents: {
@@ -14,7 +14,7 @@ export const siteConfig: SiteConfig = {
       "Oliver Morón y Brandy Siles",
       "Roberto Alvarez y Mariana Cardozo"
     ],
-    invitationText: "Acompáñame a celebrar una noche mágica e inolvidable al cumplir mis 60 años.",
+    invitationText: "Acompáñame a celebrar una noche mágica e inolvidable",
   },
   event: {
     date: {
@@ -31,7 +31,8 @@ export const siteConfig: SiteConfig = {
     topLabel: "El Lugar",
     venueName: "Verde Manzana Parque Urbano",
     address: "Santa Cruz de la Sierra",
-    mapLink: "https://maps.apple/p/RyYWbXIFUEQYM",
+    mapLink: "https://maps.app.goo.gl/cxA6bNYJTsU1tNGG8" ,
+    mapLink2: "https://maps.apple/p/Z-bingqIvT9iDp",
     buttonText: "¿Cómo llegar?",
   },
   itinerary: {
@@ -97,7 +98,7 @@ export const siteConfig: SiteConfig = {
     webhookUrl: process.env.NEXT_PUBLIC_GOOGLE_SHEETS_WEBHOOK_URL || "",
   },
   theme: {
-    colors: {
+    colors: { 
       primary: "#fbeede",
       secondary: "#FAF4EA",
       accent: "#fbeede",

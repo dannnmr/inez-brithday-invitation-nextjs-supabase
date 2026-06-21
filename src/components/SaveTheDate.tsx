@@ -5,6 +5,7 @@ import { CalendarPlus } from "lucide-react";
 import { siteConfig } from "../config/invitation";
 import { AnimatedSection } from "./ui/AnimatedSection";
 import { getCalendarLinks } from "../lib/calendar";
+import { FloatingDecoration } from "./ui/FloatingDecoration";
 
 export function SaveTheDate() {
   const handleAddToCalendar = () => {
@@ -26,12 +27,25 @@ export function SaveTheDate() {
   };
 
   return (
-    <section className="relative py-8 bg-transparent w-full flex flex-col items-center overflow-hidden">
-      <div className="relative z-10 max-w-6xl w-full px-6 flex flex-col items-center">
-        {/* Save The Date Event Card */}
+    <div className="relative w-full bg-[#fbeede] mb-[48vw] md:mb-[260px]">
+      {/* Bottom curve bulging downwards into Gifts */}
+      <div className="absolute bottom-0 left-0 right-0 h-[50vw] md:h-[280px] bg-[#fbeede] rounded-b-[70%_100%] pointer-events-none translate-y-full z-0" />
+
+      {/* Floral decorations overlaying the bottom curve */}
+
+      <FloatingDecoration
+        src="/images/decorativas_v2/flor_blanca_dorada.png"
+        alt="Flor Roja"
+        className="bottom-[-40vw] md:bottom-[-180px] right-[10%] w-24 h-24 min-[380px]:w-32 min-[380px]:h-32 md:w-44 md:h-44 opacity-80 z-10"
+        animationStyle="float"
+      />
+
+      <section className="relative z-10 pt-8 pb-2 bg-transparent w-full flex flex-col items-center">
+        <div className="relative z-10 max-w-6xl px-6 w-full flex flex-col items-center">
+          {/* Save The Date Event Card */}
         <AnimatedSection
           once
-          className="flex flex-col items-center justify-center text-center w-full"
+          className="flex flex-col items-center justify-center text-center w-full mb-[-25vw] md:mb-[-140px]"
         >
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -153,5 +167,6 @@ export function SaveTheDate() {
         </AnimatedSection>
       </div>
     </section>
+  </div>
   );
 }

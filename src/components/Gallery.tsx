@@ -151,15 +151,11 @@ export function Gallery() {
         animationStyle="float"
       />
       <FloatingDecoration
-        src="/images/decorativas_v2/flor_dorada.png"
-        alt="Flor Dorada"
+        src="/images/decorativas_v2/flor_roja.png"
+        alt="Flor Roja"
         className="bottom-[1%] right-[-16%] w-72 h-72 md:w-[450px] md:h-[450px] opacity-20 pointer-events-none z-0"
         animationStyle="float"
       />
-
-      {/* Subtle Background Glows */}
-      <div className="absolute top-[-10%] right-[-10%] w-[400px] h-[400px] bg-[#fbeede]/5 rounded-full blur-[100px] pointer-events-none z-0"></div>
-      <div className="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] bg-transparent rounded-full blur-[100px] pointer-events-none z-0"></div>
 
       <div className="max-w-6xl w-full relative z-10 flex flex-col items-center">
 

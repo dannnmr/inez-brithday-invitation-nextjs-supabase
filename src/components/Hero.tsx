@@ -23,14 +23,14 @@ export function Hero() {
         <div className="absolute bottom-0 left-0 right-0 h-[70%] bg-gradient-to-t from-[#380104] via-[#380104]/30 via-35% to-transparent" />
       </div>
 
-      {/* Elegant Hanging Pearls across the entire top edge */}
-      <div className="absolute top-0 left-0 right-0 w-full h-26 min-[380px]:h-36 md:h-52 lg:h-60 z-10 pointer-events-none opacity-45">
+      {/* Elegant Hanging Pearls across the top edge - perfectly proportioned to avoid vertical cropping */}
+      <div className="absolute top-0 left-0 right-0 mx-auto w-full max-w-[650px] aspect-[720/892] z-10 pointer-events-none opacity-45">
         <Image
-          src="/images/decorativas_v2/perlas_colgando.png"
+          src="/images/decorativas_v2/perlas_colgando2.png"
           alt="Perlas Colgando"
           fill
-          sizes="100vw"
-          className="object-cover object-top"
+          sizes="(max-width: 650px) 100vw, 650px"
+          className="object-contain object-top"
           priority
         />
       </div>

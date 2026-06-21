@@ -29,6 +29,7 @@ export interface LocationConfig {
   venueName: string;
   address: string;
   mapLink: string;
+  mapLink2: string;
   buttonText: string;
 }
 

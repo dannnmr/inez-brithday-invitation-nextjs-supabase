@@ -28,7 +28,7 @@ const playfair = Playfair_Display({
 
 const formattedDate = `${siteConfig.event.date.day} de ${siteConfig.event.date.month} de ${siteConfig.event.date.year}`;
 const formattedTime = siteConfig.event.time;
-const descriptionText = `Acompáñame a celebrar ${siteConfig.client.eventType === "Mis 60 Años" ? "mi cumpleaños" : siteConfig.client.eventType} el ${formattedDate} a las ${formattedTime}. Una noche mágica llena de amor, música y recuerdos. ¡Espero verte allí!`;
+const descriptionText = `Acompáñame a celebrar ${siteConfig.client.eventType === "¡Una Noche Inolvidable!" ? "mi cumpleaños" : siteConfig.client.eventType} el ${formattedDate} a las ${formattedTime}. Una noche mágica llena de amor, música y recuerdos. ¡Espero verte allí!`;
 
 export const metadata: Metadata = {
   title: `${siteConfig.client.eventType} de ${siteConfig.client.name} — ¡Estás Invitado!`,

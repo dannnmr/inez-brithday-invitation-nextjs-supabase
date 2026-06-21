@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteConfig } from "../config/invitation";
+import { FloatingDecoration } from "./ui/FloatingDecoration";
 
 const TARGET_DATE = new Date(siteConfig.event.isoDate).getTime();
 
@@ -41,9 +42,20 @@ export function Countdown() {
   ];
 
   return (
-    <section className="relative w-full py-12 md:py-16 px-4 flex flex-col items-center text-center overflow-hidden bg-[#fbeede]">
+    <section className="relative w-full py-12 md:py-16 px-4 flex flex-col items-center text-center bg-[#fbeede] mt-[60vw] md:mt-[320px]">
+      {/* Top curve bulging upwards into SoloAdultos */}
+      <div className="absolute top-0 left-0 right-0 h-[50vw] md:h-[280px] bg-[#fbeede] rounded-t-[70%_100%] pointer-events-none -translate-y-full z-0" />
       
-      <div className="relative z-10 w-full max-w-4xl flex flex-col items-center">
+      {/* Floral decorations overlaying the curve and background */}
+      <FloatingDecoration
+        src="/images/decorativas_v2/flor_roja.png"
+        alt="Flor Roja"
+        className="top-[-20vw] md:top-[-110px] left-[-3%] w-24 h-24 min-[380px]:w-32 min-[380px]:h-32 md:w-48 md:h-48 opacity-80 z-10"
+        animationStyle="float"
+      />
+
+
+      <div className="relative z-10 w-full max-w-4xl flex flex-col items-center mt-[-35vw] md:mt-[-180px]">
         <div className="mb-6">
           <p className="font-sans text-[8px] md:text-[10px] uppercase tracking-[0.6em] text-[#3f020a] mb-1 font-black">
             El Gran Día

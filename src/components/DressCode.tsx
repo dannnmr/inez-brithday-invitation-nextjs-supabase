@@ -11,13 +11,13 @@ import Image from "next/image";
 export function DressCode() {
   return (
     <div className="relative w-full bg-transparent overflow-hidden">
-      <section className="relative py-12 md:py-16 px-4 md:px-10 flex flex-col items-center overflow-hidden w-full">
+      <section className="relative pt-12 pb-2 md:pt-16 md:pb-4 px-4 md:px-10 flex flex-col items-center overflow-hidden w-full">
 
         {/* Ambient Glow */}
         <div className="absolute top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] md:w-[400px] md:h-[400px] bg-[radial-gradient(circle_at_center,rgba(251, 238, 222,0.06)_0%,transparent_70%)] rounded-full blur-3xl pointer-events-none z-0" />
 
         {/* Decorative Pearl Strings on the sides */}
-        <div className="absolute left-[-2%] top-[0%] w-58 h-[270px] md:w-44 md:h-[266px] z-0 pointer-events-none opacity-80">
+        <div className="absolute left-[-100px] top-[0%] w-58 h-[270px] md:w-44 md:h-[266px] z-0 pointer-events-none opacity-80 scale-x-[-1] rotate-15">
           <Image
             src="/images/decorativas_v2/perlas.png"
             alt="Perlas"

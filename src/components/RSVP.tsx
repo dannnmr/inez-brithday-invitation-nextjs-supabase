@@ -17,46 +17,23 @@ export function RSVP() {
   return (
     <section className="relative py-8 px-6 bg-transparent flex flex-col items-center overflow-hidden w-full">
 
-      {/* Decorative Pearl Strings on the sides */}
-      <div className="absolute left-[3%] top-[15%] w-24 h-[145px] md:w-36 md:h-[220px] z-0 pointer-events-none opacity-20">
+      {/* Cinta de Encaje Divider spanning the full width of the screen */}
+      <div className="absolute top-0 left-0 right-0 w-full h-10 md:h-10 pointer-events-none select-none z-20">
         <Image
-          src="/images/decorativas_v2/perlas.png"
-          alt="Perlas"
+          src="/images/decorativas_v2/cinta_encaje.png"
+          alt="Cinta de Encaje"
           fill
-          sizes="(max-width: 768px) 96px, 144px"
-          className="object-contain object-left"
-        />
-      </div>
-      <div className="absolute right-[3%] bottom-[15%] w-24 h-[145px] md:w-36 md:h-[220px] z-0 pointer-events-none opacity-20 scale-x-[-1]">
-        <Image
-          src="/images/decorativas_v2/perlas.png"
-          alt="Perlas"
-          fill
-          sizes="(max-width: 768px) 96px, 144px"
-          className="object-contain object-left"
+          sizes="100vw"
+          className="object-cover object-bottom"
+          priority
         />
       </div>
 
-      {/* Decorative Jungle Leaves */}
-      <FloatingDecoration
-        src="/images/decorativas_v2/hojas.png"
-        alt="Selva"
-        className="top-[10%] left-[-15%] w-72 h-72 md:w-[450px] md:h-[450px] opacity-15"
-        animationStyle="slideLeft"
-      />
-
-      <FloatingDecoration
-        src="/images/decorativas_v2/flor_dorada.png"
-        alt="Flor"
-        className="bottom-[-5%] right-[-10%] w-60 h-60 md:w-[350px] md:h-[350px] opacity-25"
-        animationStyle="slideRight"
-      />
+   
 
       <AnimatedSection once className="relative z-10 max-w-md w-full mx-auto px-1">
-        {/* card-glass container */}
-        <div className="card-glass p-6 md:p-10 rounded-3xl relative overflow-hidden text-center flex flex-col items-center">
-          {/* Elegant Gold Top Border */}
-          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#fbeede] to-transparent" />
+        {/* transparent container */}
+        <div className="p-6 md:p-10 relative overflow-hidden text-center flex flex-col items-center w-full">
 
           <SectionHeader
             subtitle="Confirmación de Asistencia"
@@ -92,6 +69,18 @@ export function RSVP() {
 
         </div>
       </AnimatedSection>
+
+      {/* Cinta de Encaje Divider spanning the full width of the screen at the bottom */}
+      <div className="absolute bottom-0 left-0 right-0 w-full h-10 md:h-10 pointer-events-none select-none z-20">
+        <Image
+          src="/images/decorativas_v2/cinta_encaje.png"
+          alt="Cinta de Encaje Inferior"
+          fill
+          sizes="100vw"
+          className="object-cover object-top"
+          priority
+        />
+      </div>
     </section>
   );
 }

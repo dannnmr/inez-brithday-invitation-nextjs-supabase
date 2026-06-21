@@ -51,13 +51,10 @@ export function Music() {
   return (
     <section className="relative pt-4 pb-2 md:pt-6 md:pb-4 px-6 bg-transparent flex flex-col items-center overflow-hidden w-full">
 
-      {/* Background Soft Glows */}
-      <div className="absolute top-[20%] right-[-10%] w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-[#fbeede]/5 rounded-full blur-[100px] pointer-events-none z-0"></div>
-      <div className="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-[#2C4A3E]/3 rounded-full blur-[100px] pointer-events-none z-0"></div>
-
+  
       {/* Safari Leopard decoration */}
       <FloatingDecoration
-        src="/images/decorativas_v2/leopardo_rugiendo.png"
+        src="/images/decorativas_v2/candeladros.png"
         alt="Leopardo"
         className="bottom-[-5%] left-[-10%] w-72 h-72 md:w-[450px] md:h-[450px] opacity-45 pointer-events-none z-0"
         animationStyle="slideLeft"
@@ -66,7 +63,7 @@ export function Music() {
       <div className="relative z-10 max-w-4xl w-full flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
 
         {/* Vinyl interactive widget */}
-        <div className="relative w-28 h-28 md:w-32 md:h-32 group flex items-center justify-center shrink-0">
+        <div className="relative w-15 h-15 md:w-32 md:h-32 group flex items-center justify-center shrink-0 mt-14">
 
           {/* Record player base (white/scrapbook style) */}
           <div className="absolute inset-[-8px] bg-[#FAF7F2] border-[1.5px] border-[#fbeede]/30 rounded-3xl shadow-sm pointer-events-none rotate-[-2.5deg]">
@@ -85,7 +82,7 @@ export function Music() {
             animate={{ rotate: 360 }}
             transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
             style={{ willChange: "transform" }}
-            className="relative w-22 h-22 md:w-26 md:h-26 rounded-full bg-neutral-950 border-[5px] border-neutral-900 flex items-center justify-center shadow-md z-10"
+            className="relative w-15 h-15 md:w-26 md:h-26 rounded-full bg-neutral-950 border-[5px] border-neutral-900 flex items-center justify-center shadow-md z-10"
           >
             {/* Grooves */}
             <div className="absolute inset-0 rounded-full bg-[conic-gradient(from_0deg,transparent_0deg,rgba(255,255,255,0.02)_60deg,transparent_120deg,rgba(255,255,255,0.03)_180deg,transparent_240deg,rgba(255,255,255,0.03)_300deg,transparent_360deg)] pointer-events-none" />
