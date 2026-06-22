@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export function Location() {
   return (
-    <div className="relative w-full bg-[#fbeede] mt-[60vw] md:mt-[280px] mb-[48vw] md:mb-[180px]">
+    <div className="relative w-full bg-[#fbeede] mt-[60vw] md:mt-[280px] mb-[48vw] md:mb-[340px]">
       {/* Top curve bulging upwards into Music */}
       <div className="absolute top-0 left-0 right-0 h-[50vw] md:h-[280px] bg-[#fbeede] rounded-t-[70%_100%] pointer-events-none -translate-y-full z-0" />
 

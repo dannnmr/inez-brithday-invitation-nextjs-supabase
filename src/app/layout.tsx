@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   title: `${siteConfig.client.eventType} de ${siteConfig.client.name} — ¡Estás Invitado!`,
   description: descriptionText,
   icons: {
-    icon: "/images/decorativas_v2/logo_brochev4.png",
-    shortcut: "/images/decorativas_v2/logo_brochev4.png",
-    apple: "/images/decorativas_v2/logo_brochev4.png",
+    icon: "/images/invitation/broche_inez.png",
+    shortcut: "/images/invitation/broche_inez.png",
+    apple: "/images/invitation/broche_inez.png",
   },
   openGraph: {
     title: `${siteConfig.client.eventType} de ${siteConfig.client.name} — ¡Estás Invitado!`,

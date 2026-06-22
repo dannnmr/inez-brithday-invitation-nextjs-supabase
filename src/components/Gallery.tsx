@@ -11,7 +11,7 @@ import { submitToGoogleSheets } from "@/lib/googleSheets";
 import { FloatingDecoration } from "./ui/FloatingDecoration";
 
 type Photo = {
-  id: string;
+  id: number;
   foto_url: string;
   creado_en: string;
 };
@@ -125,8 +125,8 @@ export function Gallery() {
 
       submitToGoogleSheets("foto", { foto_url: publicUrl })
         .catch(gsError => console.error("Error syncing photo to Google Sheets:", gsError));
-    } catch (err) {
-      console.error(err);
+    } catch (err: any) {
+      console.error("Gallery upload error:", err?.message || err);
       setUploadError("Error al procesar la imagen. Intenta nuevamente.");
     } finally {
       setIsUploading(false);
@@ -277,7 +277,7 @@ export function Gallery() {
                         {/* Polaroid Clip */}
                         <div className="absolute top-[-24px] left-1/2 -translate-x-1/2 w-14 h-20 z-50 pointer-events-none select-none">
                           <Image
-                            src="/images/decorativas_v2/clip_polaroid.png"
+                            src="/images/decorativas_v2/moño_perla.png"
                             alt="Polaroid Clip"
                             width={56}
                             height={56}

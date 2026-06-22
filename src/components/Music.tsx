@@ -39,7 +39,7 @@ export function Music() {
       setSong("");
       setTimeout(() => setIsSuccess(false), 4000);
     } catch (err: any) {
-      console.error("Supabase error:", err);
+      console.error("Supabase error:", err?.message || err);
       setError("Error al enviar la sugerencia. Intenta de nuevo.");
     } finally {
       setIsSubmitting(false);
@@ -63,7 +63,7 @@ export function Music() {
       <div className="relative z-10 max-w-4xl w-full flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
 
         {/* Vinyl interactive widget */}
-        <div className="relative w-15 h-15 md:w-32 md:h-32 group flex items-center justify-center shrink-0 mt-14">
+        <div className="relative w-15 h-15 md:w-32 md:h-32 group flex items-center justify-center shrink-0 mt-14 md:mt-0">
 
           {/* Record player base (white/scrapbook style) */}
           <div className="absolute inset-[-8px] bg-[#FAF7F2] border-[1.5px] border-[#fbeede]/30 rounded-3xl shadow-sm pointer-events-none rotate-[-2.5deg]">

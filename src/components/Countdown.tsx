@@ -42,7 +42,7 @@ export function Countdown() {
   ];
 
   return (
-    <section className="relative w-full py-12 md:py-16 px-4 flex flex-col items-center text-center bg-[#fbeede] mt-[60vw] md:mt-[320px]">
+    <section className="relative w-full py-12 md:py-16 px-4 flex flex-col items-center text-center bg-[#fbeede] mt-[60vw] md:mt-[560px]">
       {/* Top curve bulging upwards into SoloAdultos */}
       <div className="absolute top-0 left-0 right-0 h-[50vw] md:h-[280px] bg-[#fbeede] rounded-t-[70%_100%] pointer-events-none -translate-y-full z-0" />
       

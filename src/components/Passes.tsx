@@ -137,7 +137,6 @@ export function Passes() {
 
               {/* Stub (Right Side) */}
               <div className="w-18 sm:w-24 md:w-40 relative bg-white/2flex flex-col items-center justify-between p-1.5 sm:p-3 overflow-hidden shrink-0 border-l border-[#fbeede]/15 z-10 text-center">
-              
 
                 {/* Inner border line for stub */}
                 <div className="absolute inset-0.5 border border-[#fbeede]/10 rounded-[6px] md:rounded-[12px] pointer-events-none z-20" />

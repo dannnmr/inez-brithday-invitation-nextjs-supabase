@@ -7,7 +7,7 @@ import { siteConfig } from "../config/invitation";
 
 export function Footer() {
   return (
-    <footer className="relative py-6 md:py-8 bg-transparent flex flex-col items-center justify-center overflow-hidden border-t border-[#fbeede]/20 w-full">
+    <footer className="relative py-6 md:py-8 bg-[#fbeede] flex flex-col items-center justify-center overflow-hidden border-t border-[#fbeede]/20 w-full">
 
       {/* Subtle Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(251, 238, 222,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(251, 238, 222,0.01)_1px,transparent_1px)] bg-size-[40px_40px] pointer-events-none z-0 opacity-60" />
@@ -18,20 +18,14 @@ export function Footer() {
 
       {/* Decorative Ornaments */}
       <FloatingDecoration
-        src="/images/decorativas_v2/hojas.png"
-        alt="Hojas Selva Fondo"
-        className="top-[10%] left-[25%] w-12 h-12 opacity-15 rotate-[12deg] pointer-events-none z-0"
+        src="/images/decorativas_v2/telefono.png"
+        alt="Telefono"
+        className="top-[-1%] left-[-5%] w-36 h-36 md:w-48 md:h-48 opacity-20 pointer-events-none z-0"
         animationStyle="float"
       />
       <FloatingDecoration
-        src="/images/decorativas_v2/flor_dorada.png"
-        alt="Flor Dorada Fondo"
-        className="bottom-[15%] right-[30%] w-14 h-14 opacity-20 pointer-events-none z-0"
-        animationStyle="float"
-      />
-      <FloatingDecoration
-        src="/images/decorativas_v2/leopardo_rugiendo.png"
-        alt="Leopardo Fondo"
+        src="/images/decorativas_v2/flor_roja.png"
+        alt="Flor Roja"
         className="bottom-[-12%] right-[-6%] w-36 h-36 md:w-48 md:h-48 opacity-20 pointer-events-none z-0"
         animationStyle="float"
       />
@@ -41,13 +35,13 @@ export function Footer() {
         {/* Left: Client Name */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left gap-0.5">
           <div className="flex items-center gap-2">
-            <span className="font-sans text-[8px] md:text-[9px] text-[#fbeede] tracking-[0.35em] uppercase font-bold">
+            <span className="font-sans text-[8px] md:text-[9px] text-[#380104] tracking-[0.35em] uppercase font-bold">
               Exclusive Pass
             </span>
             <div className="w-1.5 h-1.5 rounded-full bg-[#fbeede]" />
           </div>
 
-          <h2 className="font-pinyon text-5xl sm:text-5xl text-[#fbeede] leading-none my-0.5 select-none">
+          <h2 className="font-pinyon text-5xl sm:text-5xl text-[#380104] leading-none my-0.5 select-none">
             {siteConfig.client.name}
           </h2>
 

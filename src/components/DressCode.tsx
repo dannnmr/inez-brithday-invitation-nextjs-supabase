@@ -39,7 +39,7 @@ export function DressCode() {
           />
 
           {/* Card: Dress Code (All Black & No Red) */}
-          <div className="flex flex-col items-center justify-center text-center pt-[20%] pb-[22%] px-[5%] md:px-[6%] relative overflow-hidden w-full max-w-[540px] md:max-w-[660px] mx-auto aspect-square mt-[-50px] md:mt-[-95px]">
+          <div className="flex flex-col items-center justify-center text-center pt-[20%] pb-[22%] px-[5%] md:px-[6%] relative overflow-hidden w-full max-w-[540px] md:max-w-[660px] mx-auto aspect-square mt-[-50px] md:mt-[-20px]">
             {/* Decorative Frame Background */}
             <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
               <Image
