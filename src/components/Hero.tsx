@@ -63,9 +63,9 @@ export function Hero() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="absolute top-16 md:top-18 left-0 right-0 z-20 font-serif text-4xl min-[380px]:text-5xl md:text-5xl lg:text-6xl text-[#FAF4EA] tracking-[0.2em] uppercase leading-none drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)] font-light text-center px-6"
+        className="absolute top-16 md:top-18 left-0 right-0 z-20 font-serif text-4xl min-[380px]:text-5xl md:text-5xl lg:text-6xl text-[#FAF4EA] tracking-[0.2em] uppercase leading-none drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)] font-light text-center px-8"
       >
-        Happy Birthday
+         My Birthday
       </motion.h2>
 
       {/* Main Content Container */}
@@ -95,20 +95,17 @@ export function Hero() {
             <div className="absolute bottom-0 left-0 right-0 h-[15%] bg-gradient-to-t from-[#2D0205] to-[#2D0205]/0 pointer-events-none z-10" />
           </motion.div>
 
-          {/* Cumpleañera Name (Text with font-pinyon calligraphic typography & Rich Gold Foil Effect) */}
-          <motion.h1
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            className="relative font-pinyon text-6xl min-[380px]:text-7xl bg-gradient-to-b from-[#FAF4EA] via-[#fcf0d6] to-[#ffe5ae] bg-clip-text text-transparent tracking-wide mx-auto mt-2 mb-4 translate-y-[48px] md:absolute md:inset-0 md:m-auto md:w-full md:h-fit md:text-7xl lg:text-8xl md:translate-y-[70px] lg:translate-y-[85px] filter drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)] z-20 pointer-events-none leading-[0.85] select-none text-center"
-          >
-            {siteConfig.client.name.split(" ").map((word, i) => (
-              <React.Fragment key={i}>
-                {word}
-                {i < siteConfig.client.name.split(" ").length - 1 && <br />}
-              </React.Fragment>
-            ))}
-          </motion.h1>
+          {/* Wrapper for Name with Drop Shadow Filter (fixes browser clipping bug between bg-clip-text and filter) */}
+          <div className="filter drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)] z-20 pointer-events-none w-full md:absolute md:inset-0 md:m-auto md:h-fit md:translate-y-[70px] lg:translate-y-[85px]">
+            <motion.h1
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.3, duration: 0.8 }}
+              className="relative font-pinyon text-5xl min-[380px]:text-6xl bg-gradient-to-b from-[#FAF4EA] via-[#fcf0d6] to-[#ffe5ae] bg-clip-text text-transparent tracking-wide mx-auto mt-2 mb-4 py-4 translate-y-[90px] md:translate-y-0 text-center leading-[0.85] select-none"
+            >
+              {siteConfig.client.name}
+            </motion.h1>
+          </div>
         </div>
       </div>
 
