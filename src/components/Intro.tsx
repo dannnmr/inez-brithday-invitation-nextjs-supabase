@@ -113,7 +113,7 @@ export function Intro() {
     <>
       {/* Audio Element */}
       <audio ref={audioRef} loop>
-        <source src="/audio/ipanema.mp3" type="audio/mpeg" />
+        <source src="/audio/inez_song.mp3" type="audio/mpeg" />
       </audio>
 
       {!isClosed && (

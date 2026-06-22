@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Great_Vibes, Pinyon_Script, Playfair_Display } from "next/font/google";
+import { Outfit, Great_Vibes, Pinyon_Script, Playfair_Display, Cinzel } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/config/invitation";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -23,6 +23,11 @@ const pinyonScript = Pinyon_Script({
 
 const playfair = Playfair_Display({
   variable: "--font-serif",
+  subsets: ["latin"],
+});
+
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
   subsets: ["latin"],
 });
 
@@ -69,7 +74,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${outfit.variable} ${greatVibes.variable} ${pinyonScript.variable} ${playfair.variable} font-sans antialiased`}
+        className={`${outfit.variable} ${greatVibes.variable} ${pinyonScript.variable} ${playfair.variable} ${cinzel.variable} font-sans antialiased`}
       >
         <ThemeProvider>
           {children}

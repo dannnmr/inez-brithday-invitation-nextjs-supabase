@@ -18,7 +18,7 @@ export function Location() {
       <div className="absolute bottom-0 left-0 right-0 h-[50vw] md:h-[280px] bg-[#fbeede] rounded-b-[70%_100%] pointer-events-none translate-y-full z-0" />
 
       {/* Background Ornament: Montón de Copas spanning the entire component height, overlaying the curves */}
-      <div className="absolute top-[-50vw] md:top-[-280px] bottom-[-50vw] md:bottom-[-280px] left-0 right-0 z-5 opacity-18 pointer-events-none">
+      <div className="absolute top-[-50vw] md:top-[-280px] bottom-[-50vw] md:bottom-[-280px] left-0 right-0 z-5 opacity-12 pointer-events-none">
         <Image
           src="/images/decorativas_v2/monton_copas.png"
           alt="Montón de Copas"

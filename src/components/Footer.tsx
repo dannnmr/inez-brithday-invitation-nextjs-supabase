@@ -20,13 +20,13 @@ export function Footer() {
       <FloatingDecoration
         src="/images/decorativas_v2/telefono.png"
         alt="Telefono"
-        className="top-[-1%] left-[-5%] w-36 h-36 md:w-48 md:h-48 opacity-20 pointer-events-none z-0"
+        className="top-[-1%] left-[-5%] w-36 h-36 md:w-48 md:h-48 opacity-50 pointer-events-none z-0"
         animationStyle="float"
       />
       <FloatingDecoration
         src="/images/decorativas_v2/flor_roja.png"
         alt="Flor Roja"
-        className="bottom-[-12%] right-[-6%] w-36 h-36 md:w-48 md:h-48 opacity-20 pointer-events-none z-0"
+        className="bottom-[-12%] right-[-6%] w-36 h-36 md:w-48 md:h-48 opacity-50 pointer-events-none z-0"
         animationStyle="float"
       />
 

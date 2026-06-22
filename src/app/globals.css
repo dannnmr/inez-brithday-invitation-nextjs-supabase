@@ -5,6 +5,7 @@
   --font-script: var(--font-script), cursive;
   --font-pinyon: var(--font-pinyon), cursive;
   --font-serif: var(--font-serif), ui-serif, Georgia, serif;
+  --font-cinzel: var(--font-cinzel), serif;
 
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);

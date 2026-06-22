@@ -60,7 +60,7 @@ export function Gifts() {
               <h4 className="font-serif text-sm sm:text-base text-[#FAF4EA] font-extrabold uppercase tracking-widest mb-1.5">
                 Lluvia de Sobres
               </h4>
-              <p className="font-sans text-[9.5px] sm:text-[10px] leading-relaxed text-[#FAF4EA]/85 font-light tracking-wide max-w-[190px] sm:max-w-[210px]">
+              <p className="font-sans text-[12px] sm:text-[10px] leading-relaxed text-[#FAF4EA]/85 font-light tracking-wide max-w-[240px] sm:max-w-[260px]">
                 Compartir este día contigo será el mejor regalo. Cualquier muestra de afecto será recibida con gratitud.              </p>
             </div>
           </div>
